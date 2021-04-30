@@ -1,5 +1,5 @@
 Package: parallelly
-Version: 1.24.0
+Version: 1.25.0
 Title: Enhancing the 'parallel' Package
 Imports: parallel, tools, utils
 Authors@R: c(person("Henrik", "Bengtsson", role=c("aut", "cre", "cph"),
@@ -8,12 +8,13 @@ Description: Utility functions that enhance the 'parallel' package and support t
 License: LGPL (>= 2.1)
 LazyLoad: TRUE
 ByteCompile: TRUE
-URL: https://github.com/HenrikBengtsson/parallelly
+URL: https://parallelly.futureverse.org,
+        https://github.com/HenrikBengtsson/parallelly
 BugReports: https://github.com/HenrikBengtsson/parallelly/issues
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-03-13 08:34:26 UTC; hb
+Packaged: 2021-04-30 17:15:11 UTC; hb
 Author: Henrik Bengtsson [aut, cre, cph]
 Maintainer: Henrik Bengtsson <henrikb@braju.com>
 Repository: CRAN
-Date/Publication: 2021-03-14 15:50:10 UTC
+Date/Publication: 2021-04-30 19:00:03 UTC
