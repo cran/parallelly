@@ -1,5 +1,5 @@
 Package: parallelly
-Version: 1.27.0
+Version: 1.28.1
 Title: Enhancing the 'parallel' Package
 Imports: parallel, tools, utils
 Authors@R: c(person("Henrik", "Bengtsson", role=c("aut", "cre", "cph"),
@@ -11,10 +11,10 @@ ByteCompile: TRUE
 URL: https://parallelly.futureverse.org,
         https://github.com/HenrikBengtsson/parallelly
 BugReports: https://github.com/HenrikBengtsson/parallelly/issues
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 NeedsCompilation: no
-Packaged: 2021-07-19 09:43:02 UTC; hb
+Packaged: 2021-09-09 12:24:03 UTC; hb
 Author: Henrik Bengtsson [aut, cre, cph]
 Maintainer: Henrik Bengtsson <henrikb@braju.com>
 Repository: CRAN
-Date/Publication: 2021-07-19 10:40:02 UTC
+Date/Publication: 2021-09-09 13:20:06 UTC
