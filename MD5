@@ -1,6 +1,6 @@
-6661a74adf3beefdf3d439502af68366 *DESCRIPTION
+40a9f64f58630459dba382632903de71 *DESCRIPTION
 671dcb42ab884bd3d3d731a90e911071 *NAMESPACE
-b29425c3aee505a777f25a81562e2bd9 *NEWS.md
+6c111a0483673cf5006f4d53f7737b0e *NEWS.md
 1266c6930b96ff468c20db0c890767b2 *R/RichSOCKcluster.R
 adc585ac097cc845f1529712d40c3422 *R/as.cluster.R
 4005a803d15e033b08fde9b7edaff445 *R/autoStopCluster.R
@@ -18,9 +18,9 @@ f8f517a6163198989bd0e05bdde913ec *R/isConnectionValid.R
 0e79ebc76bab94e1ff5074ff6666d408 *R/isLocalhostNode.R
 548a8dc8ed35cc9c9f7d5a45e7bfb0a7 *R/isNodeAlive.R
 c133a9e1a97c6ee6c1e9af5a6be4b427 *R/makeClusterMPI.R
-8a9319b85d02ac6d08936bd9c0943b46 *R/makeClusterPSOCK.R
+b4ecfa917d5168b298b6884cf8b6ba02 *R/makeClusterPSOCK.R
 ce2fefdd07edd75dff5bf5cd9313a6f7 *R/makeNodePSOCK.R
-92834c5c639edfd7fb5ccf9b2ec9ec40 *R/options.R
+9423f77b939031f306448fd4835dde77 *R/options.R
 4f5676ec90acd0cbcfea287bf90a192e *R/parallelly_disable_parallel_setup_if_needed.R
 0ea8438363e4c9bb1a0546ae22472416 *R/ports.R
 8ad0852a1607719083cd45a00f33daed *R/stealth_sample.R
@@ -35,7 +35,7 @@ c10761abba57ea741415857be1ea8b7a *R/utils.R
 adf704735b6e06f2bf6a550711763177 *man/as.cluster.Rd
 3d2e8046a6c0af58dd75fea1ee39a336 *man/autoStopCluster.Rd
 8f65a0f39170fbb80dfd8f87cf19c4ce *man/availableConnections.Rd
-2e7d7d2fbd51eecdf8b1c58cc2bfd332 *man/availableCores.Rd
+34a117ebe213d588a93a351c833cd091 *man/availableCores.Rd
 c5386d77ad98e9fb3b500aef9d180e17 *man/availableWorkers.Rd
 5f2c9599b2ca3506ae032f60beb1487b *man/canPortBeUsed.Rd
 076c825fe6d62ff62a502b18b423deb4 *man/cpuLoad.Rd
@@ -53,7 +53,7 @@ f2bcc96286ae7c2dae1476817f4528e0 *man/isLocalhostNode.Rd
 9ec128e4cd001e684081a20814b031a7 *man/isNodeAlive.Rd
 2a6480bfcdaa83fb7723c270ce6a1254 *man/makeClusterMPI.Rd
 6ab3fadc0e73ce11e4421247ccd8aca1 *man/makeClusterPSOCK.Rd
-22058efcf8eeb62370d0b97a6605502d *man/parallelly.options.Rd
+929d29e54f4707635d717b22622776f6 *man/parallelly.options.Rd
 dfb738c2f40f0d7e15419d9d973757b2 *man/pid_exists.Rd
 2b86a011977bcbd8c9551baa94379549 *man/supportsMulticore.Rd
 4ee6d07f59c8dde90a4cf11ce321e363 *tests/as.cluster.R
@@ -69,7 +69,7 @@ a60546115bff38885d99d6c4cc706edd *tests/freePort.R
 235d4b648fc0315a7a962c7711f1ccd9 *tests/isConnectionValid.R
 3f3e452bf24321c8f6f472c5cb7efd66 *tests/isForkedChild.R
 ed8d703a1f3627a756bf0c9352324dfd *tests/makeClusterMPI.R
-63d0a24c400d701ae4cc695fc1eb635d *tests/makeClusterPSOCK.R
+adf919bd7a5efbfab21e3c9cd06e3d14 *tests/makeClusterPSOCK.R
 e8714dc1be95279112720f0d6d0414a4 *tests/options-and-envvars.R
 e56f280042e268b895949c00c32fb3cb *tests/r_bug18119.R
 1437f4e668cd4e5475f236431e427a3a *tests/startup.R
