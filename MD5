@@ -1,6 +1,6 @@
-1855b62e18b320fc5584d8be77fa824a *DESCRIPTION
+67bf78d60503a918ba27273784105b47 *DESCRIPTION
 fe5261b6ef6ddb512967f10fcea7385b *NAMESPACE
-bbb47f6a57378d5167b02fe7b3328d55 *NEWS.md
+8ed1c33ca91ae0827105de5609aee700 *NEWS.md
 6f7a4d7f7764134332b682b96f2045bd *R/000.import.R
 10f026a39d0519f06a59230490678f74 *R/RichSOCKcluster.R
 00097b07880734aa85ad396810c5c331 *R/as.cluster.R
@@ -64,7 +64,7 @@ d3db93eedff77b24d4f0bb96a5527eab *man/parallelly.options.Rd
 7d45dd4fb3155355e4c3f489d23d2263 *src/000.api.h
 1e45a49ece5fa76cb87e950ab7f5171a *src/000.init.c
 bc3b924650b8c7d25c52e04501f52190 *src/Makevars.win
-c5f7c5c076dfc6c578eeb898fd4257ff *src/test_tcp_port.c
+7c1cdd92320c621f0be274cb07bd4615 *src/test_tcp_port.c
 4ee6d07f59c8dde90a4cf11ce321e363 *tests/as.cluster.R
 b975a98464bbe3bf1bf8137abc657f84 *tests/availableCores.R
 2a029ba92d644e3f2e1cc97e7c7d55b1 *tests/availableWorkers.R

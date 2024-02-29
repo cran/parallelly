@@ -1,5 +1,5 @@
 Package: parallelly
-Version: 1.37.0
+Version: 1.37.1
 Title: Enhancing the 'parallel' Package
 Imports: parallel, tools, utils
 Authors@R: c(person("Henrik", "Bengtsson",
@@ -16,9 +16,9 @@ BugReports: https://github.com/HenrikBengtsson/parallelly/issues
 Encoding: UTF-8
 RoxygenNote: 7.3.1
 NeedsCompilation: yes
-Packaged: 2024-02-14 17:39:20 UTC; henrik
+Packaged: 2024-02-29 04:56:55 UTC; henrik
 Author: Henrik Bengtsson [aut, cre, cph]
     (<https://orcid.org/0000-0002-7579-5165>)
 Maintainer: Henrik Bengtsson <henrikb@braju.com>
 Repository: CRAN
-Date/Publication: 2024-02-14 22:30:02 UTC
+Date/Publication: 2024-02-29 07:10:02 UTC
