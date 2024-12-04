@@ -1,6 +1,6 @@
-ba83564813b5305c3fee9292820f7082 *DESCRIPTION
+785de687e1d9baf155911cfc95af6b51 *DESCRIPTION
 e3f923c5ec66df6c3cd708b4148dbbec *NAMESPACE
-5e71352c49d40a9f375f1c82b77df0c6 *NEWS.md
+1fdf718a4e4ee407bd761c2659c7c1f8 *NEWS.md
 6f7a4d7f7764134332b682b96f2045bd *R/000.import.R
 10f026a39d0519f06a59230490678f74 *R/RichSOCKcluster.R
 00097b07880734aa85ad396810c5c331 *R/as.cluster.R
@@ -37,7 +37,7 @@ e704adddb3cf0b23f4ff66dc4cefb39d *R/utils,cluster.R
 803b446897dc95401f17ad56de402fe5 *R/utils,conditions.R
 e0fd992d39e27d77b8731a10a378578f *R/utils,pid.R
 f579fbca75641703af1732c163aafa58 *R/utils.R
-4dbc545f7d5fd968f58f93cd3c423344 *R/vignette_engine.R
+68271b745153ec5210304ea76ad794ee *R/vignette_engine.R
 8cd4c46bde470516a61cce7640c9a27e *R/zzz.R
 9037e625dca9d07cd6af8d84e156ac8b *build/vignette.rds
 125bd0d1ce888cac044af69874c96f42 *inst/WORDLIST
