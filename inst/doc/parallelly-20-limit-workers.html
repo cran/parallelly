@@ -101,9 +101,7 @@ where the parallel workers are launched.</p>
 quota and 50 MiB of memory using Linux CGroups management. The 100%
 CPU quota limit constrain each worker to use at most one CPU worth of
 processing preventing them from overusing the machine, e.g.  through
-unintended nested parallelization. The 50 MiB memory limit is strict -
-if a worker use more than this, the operating system will terminate
-the worker instantly.</p>
+unintended nested parallelization. For more details, see <code>man systemd.resource-control</code>.</p>
 <pre><code class="language-r">library(parallelly)
 cl &lt;- makeClusterPSOCK(
   2L,
@@ -115,7 +113,40 @@ cl &lt;- makeClusterPSOCK(
   )
 )
 </code></pre>
-<p>For more details, see <code>man systemd.resource-control</code>.</p>
+<p>Note, depending on your CGroups configuration, a non-privileged user
+may or may not be able to set the CPU quota. If not, the <code>-p CPUQuota=100%</code> will be silently ignored.</p>
+<p>The 50 MiB memory limit is strict - if a worker use more than this,
+the operating system will terminate the worker instantly. To
+illustrate what happens, we first start by generating 1 million
+numeric values each consuming 8 bytes, which in total consumes ~8 MB,
+and then calculate the mean, the memory consumption is within 50-MiB
+memory limit that each parallel worker has available;</p>
+<pre><code class="language-r">library(parallel)
+mu &lt;- clusterEvalQ(cl, { x &lt;- rnorm(n = 1e6); mean(x) })
+mu &lt;- unlist(mu)
+print(mu)
+#&gt; [1]  0.0008072657 -0.0019693992
+</code></pre>
+<p>However, if we generate 10 times more values, the memory consumption
+will grow to at least 80 MB, which is over then 50-MiB memory limit,
+and we will get an error:</p>
+<pre><code class="language-r">mu &lt;- clusterEvalQ(cl, { x &lt;- rnorm(n = 10e6); mean(x) })
+#&gt; Error in unserialize(node$con) : error reading from connection
+</code></pre>
+<p>This is because the operating system terminated the two background R
+processes, because they overused the memory. This is why the main R
+process no longer can communicate with the parallel workers.  We can
+see that both workers are down, by calling:</p>
+<pre><code class="language-r">isNodeAlive(cl)
+#&gt; [1] FALSE FALSE
+</code></pre>
+<p>We can use <code>cloneNode()</code> to relaunch workers that are no longer
+alive, e.g.</p>
+<pre><code class="language-r">is_down &lt;- !isNodeAlive(cl)
+cl[is_down] &lt;- cloneNode(cl[is_down])
+isNodeAlive(cl)
+#&gt; [1] TRUE TRUE
+</code></pre>
 <h2>Example: MS Windows parallel workers with specific CPU affinities</h2>
 <p>This example, works only on MS Windows machines. It launches four
 local workers, where two are running on CPU Group #0 and two on CPU
