@@ -1,5 +1,5 @@
 Package: parallelly
-Version: 1.41.0
+Version: 1.42.0
 Title: Enhancing the 'parallel' Package
 Imports: parallel, tools, utils
 Suggests: commonmark, base64enc
@@ -23,10 +23,10 @@ BugReports: https://github.com/futureverse/parallelly/issues
 Encoding: UTF-8
 RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2024-12-18 17:21:30 UTC; henrik
+Packaged: 2025-01-30 15:20:15 UTC; henrik
 Author: Henrik Bengtsson [aut, cre, cph]
     (<https://orcid.org/0000-0002-7579-5165>),
   Mike Cheng [ctb]
 Maintainer: Henrik Bengtsson <henrikb@braju.com>
 Repository: CRAN
-Date/Publication: 2024-12-18 18:20:02 UTC
+Date/Publication: 2025-01-30 16:20:02 UTC
