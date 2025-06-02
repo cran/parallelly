@@ -88,7 +88,7 @@ library(parallel)
 cl &lt;- makeClusterPSOCK(2)
 print(cl)
 #&gt; Socket cluster with 2 nodes where 2 nodes are on host 'localhost'
-#&gt; (R version 4.4.2 (2024-10-31), platform x86_64-pc-linux-gnu)
+Socket cluster with 2 nodes where 2 nodes are on host 'localhost'#&gt; (R version 4.5.0 (2025-04-11), platform x86_64-pc-linux-gnu)
 
 y &lt;- parLapply(cl, X = 1:100, fun = sqrt)
 y &lt;- unlist(y)
@@ -116,7 +116,7 @@ options, environment variables, and CGroups settings. For details, see
 cl &lt;- makeClusterPSOCK(availableCores())
 print(cl)
 #&gt; Socket cluster with 8 nodes where 8 nodes are on host 'localhost'
-#&gt; (R version 4.4.2 (2024-10-31), platform x86_64-pc-linux-gnu)
+#&gt; (R version 4.5.0 (2025-04-11), platform x86_64-pc-linux-gnu)
 </code></pre>
 </body>
 </html>

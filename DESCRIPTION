@@ -1,5 +1,5 @@
 Package: parallelly
-Version: 1.44.0
+Version: 1.45.0
 Title: Enhancing the 'parallel' Package
 Imports: parallel, tools, utils
 Suggests: commonmark, base64enc
@@ -20,13 +20,14 @@ ByteCompile: TRUE
 URL: https://parallelly.futureverse.org,
         https://github.com/futureverse/parallelly
 BugReports: https://github.com/futureverse/parallelly/issues
+Language: en-US
 Encoding: UTF-8
 RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2025-05-06 06:14:21 UTC; henrik
+Packaged: 2025-06-02 19:35:12 UTC; henrik
 Author: Henrik Bengtsson [aut, cre, cph] (ORCID:
     <https://orcid.org/0000-0002-7579-5165>),
   Mike Cheng [ctb]
 Maintainer: Henrik Bengtsson <henrikb@braju.com>
 Repository: CRAN
-Date/Publication: 2025-05-07 11:50:02 UTC
+Date/Publication: 2025-06-02 20:50:02 UTC
